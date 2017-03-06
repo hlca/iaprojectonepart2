@@ -21,9 +21,7 @@ public class BayesianNetwork {
 	private ArrayList<String> networkVariables = new ArrayList<String>();
 	private Map<String, ArrayList<Probability>> networkMap = new HashMap<String, ArrayList<Probability>>();
 //	private HashMap<String, Variable> networkMap2 = new HashMap<String, Variable>();
-	//ArrayList<Factor> factoresR;
-	//ArrayList<Factor> factoresRB;
-	
+
 	public BayesianNetwork(ArrayList<Probability> probabilities) {
 		this.probabilities = probabilities;
 		
