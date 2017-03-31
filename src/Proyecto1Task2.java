@@ -6,7 +6,7 @@ import utils.Parser;
 public class Proyecto1Task2 {
 	public static void main(String[] args) {
         Parser p = new Parser();
-        if(!p.parse("test.txt")) {
+        if(!p.parse("red.txt")) {
         	System.out.println("Revise la red bayesiana de ingreso.");
         }else {
         	System.out.println("Su red bayesiana es válida.");

@@ -123,12 +123,12 @@ public class BayesianNetwork {
                    // Se chequea que las variables condicionadas sean las mismas
                    if(probability.getConditionVariables().size()!= variable.getParents().size()) {
                        // Se regresa falso dado que esta mal dada la definicion
-                       System.out.println("REGRESO FALSE PORQUE: Al parecer esta mal dada la definicion prque tienen diferente size");
+                       System.out.println("Al parecer esta mal dada la definición porque tienen diferente tamaño");
                        return false;
                    }
                    // Verificamos que sean las mismas
                    if(variable.checkVariables(probability.getConditionVariables())) {
-                       System.out.println("REGRESO FALSE PORQUE: Al parecer no tienen las mismas variables");
+                       System.out.println("Al parecer no tienen las mismas variables");
                        return false;
                    }
                    // Se ordenan
@@ -147,7 +147,7 @@ public class BayesianNetwork {
                                 revisado.set(i, 1);
                            }
                            else {
-                               System.out.println("REGRESO FALSE PORQUE: Al parecer ya hay una combinacion asi :S");
+                               System.out.println("Hay una combinación repetida");
                                return false;
                            }
                        }
